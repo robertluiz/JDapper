@@ -18,10 +18,16 @@ public class Main {
 
 		Stuff s = new Stuff();
 		//s.Id = 0;
-		s.string1 = "Hi youtube";
-		s.number1 = 42;
+		//s.string1 = "outro";
+		s.setId(1);
 		
-		//jd.update(s);
-		jd.insert(s);
+		jd.delete(s);
+		/*List<Stuff> lista = jd.search(s);
+		for (Stuff stuff : lista) {
+			System.out.println(stuff.getId());
+			System.out.println(stuff.getNumber1());
+			System.out.println(stuff.getString1());
+			System.out.println(stuff.getAnotherString());
+		}*/
 	}
 }
